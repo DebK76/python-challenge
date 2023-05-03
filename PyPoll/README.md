@@ -20,3 +20,5 @@ The total number of votes each candidate won
 The winner of the election based on popular vote
 
 Lastly, printing the final script for the analysis to the terminal and exporting it as a text file with the results.
+
+Note: This was a pretty difficult challenge for a beginner like myself. I received help from my peers on this assignment, and sourced and used codes I did not author or create from forum such as Stack Overflow, lectures powerpoint, Google, and Chatgpt
