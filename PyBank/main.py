@@ -1,6 +1,6 @@
 import os
 import csv
-csvpath = "../Resources/budget_data.csv"
+csvpath = "./Resources/budget_data.csv"
 
 with open(csvpath) as csvfile:
     
@@ -48,6 +48,10 @@ with open(csvpath) as csvfile:
     print(f'Greatest Decrease in Profits: {max_decrease[0]} (${max_decrease[1]})')
     
 
+
+
+
+    # Printing the results to terminal
     print ("Financial Analysis")
     print ("--------------------------")
     print(total_months)
@@ -57,22 +61,15 @@ with open(csvpath) as csvfile:
     print(avg_change)
     print(f'Greatest Increase in Profits: {max_increase[0]} (${max_increase[1]})')
     print(f'Greatest Decrease in Profits: {max_decrease[0]} (${max_decrease[1]})')
-       
+
+    # Exporting results to a text file
+    with open("Analysis/Pybank.txt", "w") as file_PythonChallenge: 
 
 
+        file_PythonChallenge.write(f"""Financial Analysis----------------------------------""")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+        file_PythonChallenge.write(f'Total Months: {total_months}\n')
+        file_PythonChallenge.write(f'Total: ${net_profit_loss}\n')
+        file_PythonChallenge.write(f'Average Change: ${avg_change:.2f}\n')
+        file_PythonChallenge.write(f'Greatest Increase in Profits: {max_increase[0]} (${max_increase[1]})\n')
+        file_PythonChallenge.write(f'Greatest Decrease in Profits: {max_decrease[0]} (${max_decrease[1]})\n')
