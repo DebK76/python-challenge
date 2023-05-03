@@ -48,9 +48,6 @@ with open(csvpath) as csvfile:
     print(f'Greatest Decrease in Profits: {max_decrease[0]} (${max_decrease[1]})')
     
 
-
-
-
     # Printing the results to terminal
     print ("Financial Analysis")
     print ("--------------------------")
